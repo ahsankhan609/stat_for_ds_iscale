@@ -27,6 +27,7 @@ dependencies = [
 dev = [
     "pyrefly>=1.0.0",
     "ruff>=0.15.0",
+    "types-seaborn>=0.13.2.20260518",
 ]
 
 [tool.uv]
