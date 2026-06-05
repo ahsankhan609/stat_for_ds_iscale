@@ -5,6 +5,45 @@
         }
     ],
     "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe"
+        "python.languageServer": "None",
+        "cursorpyright.disableLanguageServices": true,
+        "python.pyrefly.disableLanguageServices": false,
+        "python.pyrefly.typeCheckingMode": "strict",
+        "python.pyrefly.diagnosticMode": "workspace",
+        "python.pyrefly.disableTypeErrors": false,
+        "python.pyrefly.streamDiagnostics": true,
+        "python.pyrefly.syncNotebooks": true,
+        "python.pyrefly.configPath": "${workspaceFolder}/pyrefly.toml",
+        "python.analysis.inlayHints.functionReturnTypes": true,
+        "python.analysis.inlayHints.variableTypes": true,
+        "python.analysis.inlayHints.callArgumentNames": "matching",
+        "python.analysis.completeFunctionParens": true,
+        "python.analysis.diagnosticMode": "workspace",
+        "editor.inlayHints.enabled": "on",
+        "mypy-type-checker.enabled": false,
+        "pyrefly.trace.server": "off",
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+        "python.terminal.activateEnvironment": true,
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "editor.formatOnSave": true,
+            "editor.codeActionsOnSave": {
+                "source.fixAll.ruff": "explicit",
+                "source.organizeImports.ruff": "explicit"
+            }
+        },
+        "ruff.nativeServer": true,
+        "ruff.path": [
+            "${workspaceFolder}/.venv/Scripts/ruff.exe"
+        ],
+        "ruff.configuration": "${workspaceFolder}/ruff.toml",
+        "cSpell.words": [
+            "iscale",
+            "matplotlib",
+            "pyrefly",
+            "scipy",
+            "seaborn",
+            "tzdata"
+        ]
     }
 }

@@ -32,31 +32,3 @@ dev = [
 [tool.uv]
 managed = true
 package = false
-
-[tool.ruff]
-target-version = "py314"
-line-length = 88
-src = ["."]
-extend-exclude = ["notebooks"]
-
-[tool.ruff.lint]
-select = [
-    "E",   # pycodestyle errors
-    "W",   # pycodestyle warnings
-    "F",   # pyflakes
-    "I",   # isort
-    "UP",  # pyupgrade
-    "B",   # flake8-bugbear
-    "SIM", # flake8-simplify
-    "C4",  # flake8-comprehensions
-]
-ignore = ["E501"]
-
-[tool.ruff.lint.isort]
-known-first-party = ["stat_for_ds_iscale"]
-
-[tool.ruff.format]
-quote-style = "double"
-indent-style = "space"
-line-ending = "auto"
-docstring-code-format = true
