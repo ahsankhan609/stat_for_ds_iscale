@@ -1,0 +1,22 @@
+# Standalone Pyrefly config for stat_for_ds_iscale (not in pyproject.toml).
+
+project-includes = ["**/*.py*", "**/*.ipynb"]
+project-excludes = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/*venv/**",
+    "**/.[!/.]*/**",
+    ".venv/**",
+]
+use-ignore-files = true
+search-path = ["."]
+disable-search-path-heuristics = false
+
+python-version = "3.14.5"
+python-platform = "win32"
+python-interpreter-path = ".venv/Scripts/python.exe"
+
+preset = "strict"
+check-unannotated-defs = true
+infer-return-types = "checked"
+ignore-errors-in-generated-code = false
