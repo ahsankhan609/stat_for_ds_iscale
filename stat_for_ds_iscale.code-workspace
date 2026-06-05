@@ -38,8 +38,10 @@
         ],
         "ruff.configuration": "${workspaceFolder}/ruff.toml",
         "cSpell.words": [
+            "ANOVA",
             "iscale",
             "matplotlib",
+            "multimodal",
             "Numpy",
             "pyrefly",
             "scipy",
